@@ -16,17 +16,17 @@
         </div>
 
         <div>
-            <h2>Most Liked Categories</h2>
         {% if categories %}
             <ul>
             {% for category in categories %}
-                <li><a href="/rango/category/{{ category.slug }}/">{{ category.name }}</a></li>
+                <li>{{ category.name }}</li>
             {% endfor %}
             </ul>
         {% else %}
-            <strong>There are no categories present.</strong>
+             <strong>There are no categories present.</strong>
         {% endif %}
         </div>
+
 
 
         <div>
